@@ -1,7 +1,7 @@
 :root {
-    --primary-color: red;
-    --secondary-color: blue;
-    --tertiary-color: green;
+    --primary-color: #000000;
+    --secondary-color: #000000;
+    --tertiary-color: #b697c2;
 }
 
 * {
@@ -25,6 +25,8 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    padding: 20px 35px;
+    z-index: 99999;
 }
 
 header h1 {
@@ -32,7 +34,7 @@ header h1 {
     margin: 0;
     font-size: 36px;
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -47,7 +49,7 @@ header nav {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
 }
@@ -56,44 +58,98 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 15px;
+    background: var(--primary-color); opacity: 0.2;
+    color: var(--tertiary-color);
+    border-radius: 5px;
     text-shadow: none;
 }
 
+footer {
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
 /*HEADER / NAVBAR STYLES END */
 
-/* SECTION TITLE STYLES START */
-.section-title {
-    font-size: 48px;
-    border-bottom: 3px solid;
-    color: var(--secondary-color);
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-}
-
-.contact-me {
+/* HERO STYLES */
+.hero {
+    background-size: cover 200px;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
-    margin: 40px 0 40px 0;
-    color:antiquewhite;
-}
-.contactmefirstcontainer {
-    display: flex;
-    width: 75%;
-    justify-content: start;
-    align-items: center;
-    font-size: 34px;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    padding: 0px;
+    z-index: 99998;
 }
 
-.contactmesecondcontainer {
+.flex-row {
     display: flex;
-    border-right: solid
+}
+
+.section {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.section-title {
+    font-size: 48px;
+    border-right: 3px solid;
+    color: var(--secondary-color);
+    text-align: left;
+    margin: 0 10px 0 auto;
+    width: 10%;
+}
+
+.projects {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.project {
+    margin: 20px;
+    flex: 1;
+}
+.project img {
+    width: 100%;
+}
+
+.about-me p {
+    line-height: 1.7;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: left;
+}
+.about-img {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.section ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.section ul li {
+    padding: 0 90px 0 90px;
+    text-decoration: underline;
+    text-underline-offset: 0.2cm;
 }
