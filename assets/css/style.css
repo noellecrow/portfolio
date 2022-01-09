@@ -78,3 +78,22 @@ header nav ul li a:hover {
     margin: 0 auto 35px auto;
     width: 50%;
 }
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+    color:antiquewhite;
+}
+.contactmefirstcontainer {
+    display: flex;
+    width: 75%;
+    justify-content: start;
+    align-items: center;
+    font-size: 34px;
+}
+
+.contactmesecondcontainer {
+    display: flex;
+    border-right: solid
+}
