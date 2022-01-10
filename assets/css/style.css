@@ -92,6 +92,7 @@ footer {
 
 .flex-row {
     display: flex;
+    width: 15%;
 }
 
 .largecontainer {
@@ -111,19 +112,17 @@ footer {
     text-align: left;
     margin: 0 10px 0 10px;
     padding: 0 10px 0 10px;
-    width: 10%;
+    width: 15%;
     position: absolute;
-    float: left;
 }
 
 .primary-border {
     border-right: 3px solid black;
-    margin: 0 10px 0 10px;
 }
 
 .projects {
     width: 70%;
-    margin: 0 auto;
+    margin: 0 20px 0 0px;
     display: flex;
     flex-wrap: wrap;
 
@@ -137,7 +136,7 @@ footer {
 
 .active {
     order: -1;
-    flex: 1 0 100%;
+    flex: 1 0 70%;
 }
 .project img {
     width: 100%;
@@ -166,14 +165,13 @@ footer {
 
 
 .section ul {
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .section ul li {
-    padding: 0 90px 0 90px;
+    padding: 0 10px 0 10px;
     text-decoration: underline;
-    text-underline-offset: 0.2cm;
+    text-underline-offset: 0.2em;
+
 }
