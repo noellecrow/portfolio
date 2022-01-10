@@ -6,3 +6,8 @@ This project is inteneded to serve as a space to introduce others to my work. I 
 -Sections include About Me, Work, and Contact Me.
 -Links to completed projects are accessible.
 -Navigation buttons will navigate user to corresponding position on the webpage.
+
+![Project Screenshot](./assets/images/screenshot.png)
+
+
+Deployed link: https://noellecrow.github.io/portfolio/
