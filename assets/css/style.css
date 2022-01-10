@@ -69,11 +69,8 @@ header nav ul li a:hover {
 }
 
 footer {
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
+    padding: 40px 40px;
+    text-align: center;
 }
 
 
@@ -97,6 +94,9 @@ footer {
     display: flex;
 }
 
+.largecontainer {
+    display: inline-block
+}
 .section {
     width: 100%;
     margin: 0 auto;
@@ -107,26 +107,37 @@ footer {
 }
 .section-title {
     font-size: 48px;
-    border-right: 3px solid;
     color: var(--secondary-color);
     text-align: left;
     margin: 0 10px 0 10px;
     padding: 0 10px 0 10px;
     width: 10%;
-
+    position: absolute;
     float: left;
 }
 
+.primary-border {
+    border-right: 3px solid black;
+    margin: 0 10px 0 10px;
+}
+
 .projects {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 
+
 }
 .project {
-    margin: 20px;
-    flex: 1;
+    margin: 10px;
+    flex: 40%;
+
+}
+
+.active {
+    order: -1;
+    flex: 1 0 100%;
 }
 .project img {
     width: 100%;
@@ -136,11 +147,15 @@ footer {
     opacity: 0.5;
 }
 
-.about-me {
-    display: flex;
-    flex-wrap: wrap;
+.project-description {
+    position: relative;
+    bottom: 250px;
+    left: 5px;
+    width: 200px;
+    height: 100px;
+    border: 2px solid var(--tertiary-color);
+    background-color: black;
 }
-
 .about-me p {
     line-height: 1.7;
     width: 80%;
