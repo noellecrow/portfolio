@@ -81,30 +81,33 @@ footer {
 .hero {
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    top: 0;
-    padding: 0px;
-    z-index: 99998;
 }
 
-.flex-row {
-    display: flex;
-    width: 15%;
+.hero img {
+    width: 100%;
 }
+
+
 
 .largecontainer {
     display: inline-block
 }
 .section {
     width: 100%;
-    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
     border: 5px var(--tertiary-color) solid;
+}
+
+.border {
+    width: 500px;
+}
+.about-me p {
+    line-height: 1.7;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: left;
 }
 .section-title {
     font-size: 48px;
@@ -112,17 +115,17 @@ footer {
     text-align: left;
     margin: 0 10px 0 10px;
     padding: 0 10px 0 10px;
-    width: 15%;
-    position: absolute;
+    /*width: 15%;*/
 }
 
 .primary-border {
-    border-right: 3px solid black;
+    border-left: 3px solid black;
+    height: 100%;
 }
 
 .projects {
     width: 70%;
-    margin: 0 20px 0 0px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 
@@ -155,18 +158,15 @@ footer {
     border: 2px solid var(--tertiary-color);
     background-color: black;
 }
-.about-me p {
-    line-height: 1.7;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: left;
-}
+
 
 
 .section ul {
     list-style: none;
     justify-content: space-around;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
 }
 
 .section ul li {
